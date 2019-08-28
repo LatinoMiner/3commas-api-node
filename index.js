@@ -193,8 +193,8 @@ class threeCommasAPI {
     return await this.makeRequest('GET', `/public/api/ver1/accounts/market_list?`, null)
   }
 
-  async accountsCurrencyRates () {
-    return await this.makeRequest('GET', `/public/api/ver1/accounts/currency_rates?`, null)
+  async accountsCurrencyRates (params) {
+    return await this.makeRequest('GET', `/public/api/ver1/accounts/currency_rates?`, params)
   }
 
   async accountSellAllToUsd (account_id) {
